@@ -1,6 +1,14 @@
-﻿namespace TaskManagementAPI.Application.İnterfaces
+﻿using TaskManagementAPI.Domain.Entities;
+
+namespace TaskManagementAPI.Application.İnterfaces
 {
-    internal interface ITaskRepository
+    public interface ITaskRepository
     {
+
+        Task<TaskItem> AddTaskAsync(TaskItem item);
+        Task<List<TaskItem>> GetAllTaskAsync();
+        Task<TaskItem> GetTaskByIDAsync(Guid id);
+        Task<int> UpdateTaskAsync(TaskItem item);
+        Task<int> DeleteTaskAsync(Guid id);
     }
 }

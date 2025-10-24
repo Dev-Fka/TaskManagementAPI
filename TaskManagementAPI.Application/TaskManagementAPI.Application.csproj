@@ -11,4 +11,12 @@
     <ProjectReference Include="..\TaskManagementAPI.Shared\TaskManagementAPI.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="13.0.0" />
+  </ItemGroup>
+
 </Project>

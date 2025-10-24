@@ -16,7 +16,6 @@ namespace TaskManagementAPI.Infrastructure.Data
         }
         public DbSet<TaskItem> Tasks => Set<TaskItem>();
         public DbSet<User> Users => Set<User>();
-        public DbSet<Project> TaskItems => Set<Project>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
